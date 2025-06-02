@@ -1,0 +1,312 @@
+[2025-06-02 17:17:45] local.ERROR: Undefined constant "name" {"view":{"view":"C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\resources\\views\\emails\\money_received.blade.php","data":{"transaction":"<pre class=sf-dump id=sf-dump-1327048797 data-indent-pad=\"  \"><span class=sf-dump-note>App\\Models\\Transaction</span> {<a class=sf-dump-ref>#1292</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"12 characters\">transactions</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+  #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+  +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+  +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+  +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>true</span>
+  #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:7</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>sender_id</span>\" => <span class=sf-dump-num>3</span>
+    \"<span class=sf-dump-key>recipient_id</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>amount</span>\" => <span class=sf-dump-num>5000</span>
+    \"<span class=sf-dump-key>status</span>\" => \"<span class=sf-dump-str title=\"9 characters\">completed</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2025-06-02 17:17:43</span>\"
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2025-06-02 17:17:43</span>\"
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>117</span>
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:7</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>sender_id</span>\" => <span class=sf-dump-num>3</span>
+    \"<span class=sf-dump-key>recipient_id</span>\" => <span class=sf-dump-num>1</span>
+    \"<span class=sf-dump-key>amount</span>\" => <span class=sf-dump-num>5000</span>
+    \"<span class=sf-dump-key>status</span>\" => \"<span class=sf-dump-str title=\"9 characters\">completed</span>\"
+    \"<span class=sf-dump-key>updated_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2025-06-02 17:17:43</span>\"
+    \"<span class=sf-dump-key>created_at</span>\" => \"<span class=sf-dump-str title=\"19 characters\">2025-06-02 17:17:43</span>\"
+    \"<span class=sf-dump-key>id</span>\" => <span class=sf-dump-num>117</span>
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:3</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>sender_id</span>\" => \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+    \"<span class=sf-dump-key>recipient_id</span>\" => \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+    \"<span class=sf-dump-key>amount</span>\" => \"<span class=sf-dump-str title=\"9 characters\">decimal:2</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+  #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">relations</span>: <span class=sf-dump-note>array:2</span> [<samp data-depth=2 class=sf-dump-compact>
+    \"<span class=sf-dump-key>sender</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">User</span></span> {<a class=sf-dump-ref>#1299</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">users</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">rememberTokenName</span>: \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">accessToken</span>: <span class=sf-dump-const>null</span>
+    </samp>}
+    \"<span class=sf-dump-key>recipient</span>\" => <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"App\\Models\\User
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">App\\Models</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">User</span></span> {<a class=sf-dump-ref>#1302</a><samp data-depth=3 class=sf-dump-compact>
+      #<span class=sf-dump-protected title=\"Protected property\">connection</span>: \"<span class=sf-dump-str title=\"5 characters\">mysql</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">table</span>: \"<span class=sf-dump-str title=\"5 characters\">users</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">primaryKey</span>: \"<span class=sf-dump-str title=\"2 characters\">id</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">keyType</span>: \"<span class=sf-dump-str title=\"3 characters\">int</span>\"
+      +<span class=sf-dump-public title=\"Public property\">incrementing</span>: <span class=sf-dump-const>true</span>
+      #<span class=sf-dump-protected title=\"Protected property\">with</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">withCount</span>: []
+      +<span class=sf-dump-public title=\"Public property\">preventsLazyLoading</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">perPage</span>: <span class=sf-dump-num>15</span>
+      +<span class=sf-dump-public title=\"Public property\">exists</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">wasRecentlyCreated</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">escapeWhenCastingToString</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">attributes</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">original</span>: <span class=sf-dump-note>array:9</span> [ &#8230;9]
+      #<span class=sf-dump-protected title=\"Protected property\">changes</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">casts</span>: <span class=sf-dump-note>array:2</span> [ &#8230;2]
+      #<span class=sf-dump-protected title=\"Protected property\">classCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">attributeCastCache</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dateFormat</span>: <span class=sf-dump-const>null</span>
+      #<span class=sf-dump-protected title=\"Protected property\">appends</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">dispatchesEvents</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">observables</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">relations</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+      +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+      +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+      #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+      #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [ &#8230;1]
+      #<span class=sf-dump-protected title=\"Protected property\">rememberTokenName</span>: \"<span class=sf-dump-str title=\"14 characters\">remember_token</span>\"
+      #<span class=sf-dump-protected title=\"Protected property\">accessToken</span>: <span class=sf-dump-const>null</span>
+    </samp>}
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">touches</span>: []
+  +<span class=sf-dump-public title=\"Public property\">timestamps</span>: <span class=sf-dump-const>true</span>
+  +<span class=sf-dump-public title=\"Public property\">usesUniqueIds</span>: <span class=sf-dump-const>false</span>
+  #<span class=sf-dump-protected title=\"Protected property\">hidden</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">visible</span>: []
+  #<span class=sf-dump-protected title=\"Protected property\">fillable</span>: <span class=sf-dump-note>array:4</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str title=\"9 characters\">sender_id</span>\"
+    <span class=sf-dump-index>1</span> => \"<span class=sf-dump-str title=\"12 characters\">recipient_id</span>\"
+    <span class=sf-dump-index>2</span> => \"<span class=sf-dump-str title=\"6 characters\">amount</span>\"
+    <span class=sf-dump-index>3</span> => \"<span class=sf-dump-str title=\"6 characters\">status</span>\"
+  </samp>]
+  #<span class=sf-dump-protected title=\"Protected property\">guarded</span>: <span class=sf-dump-note>array:1</span> [<samp data-depth=2 class=sf-dump-compact>
+    <span class=sf-dump-index>0</span> => \"<span class=sf-dump-str>*</span>\"
+  </samp>]
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1327048797\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","connection":"<pre class=sf-dump id=sf-dump-1505033733 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1505033733\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","queue":"<pre class=sf-dump id=sf-dump-1655931648 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1655931648\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainConnection":"<pre class=sf-dump id=sf-dump-40299491 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-40299491\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainQueue":"<pre class=sf-dump id=sf-dump-1588418743 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1588418743\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chainCatchCallbacks":"<pre class=sf-dump id=sf-dump-1892657404 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1892657404\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","delay":"<pre class=sf-dump id=sf-dump-1703978754 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-1703978754\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","afterCommit":"<pre class=sf-dump id=sf-dump-147217546 data-indent-pad=\"  \"><span class=sf-dump-const>null</span>
+</pre><script>Sfdump(\"sf-dump-147217546\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","middleware":"<pre class=sf-dump id=sf-dump-1438515585 data-indent-pad=\"  \">[]
+</pre><script>Sfdump(\"sf-dump-1438515585\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","chained":"<pre class=sf-dump id=sf-dump-1521994562 data-indent-pad=\"  \">[]
+</pre><script>Sfdump(\"sf-dump-1521994562\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","mailer":"<pre class=sf-dump id=sf-dump-1619612592 data-indent-pad=\"  \">\"<span class=sf-dump-str title=\"4 characters\">smtp</span>\"
+</pre><script>Sfdump(\"sf-dump-1619612592\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+","message":"<pre class=sf-dump id=sf-dump-1527393445 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Mail\\Message</span> {<a class=sf-dump-ref>#1363</a><samp data-depth=1 class=sf-dump-expanded>
+  #<span class=sf-dump-protected title=\"Protected property\">message</span>: <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Symfony\\Component\\Mime\\Email
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Symfony\\Component\\Mime</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Email</span></span> {<a class=sf-dump-ref>#1393</a><samp data-depth=2 class=sf-dump-compact>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\RawMessage`\">message</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\RawMessage`\">isGeneratorClosed</span>: <span class=sf-dump-const title=\"Uninitialized property\">? bool</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Message`\">headers</span>: <span class=\"sf-dump-note sf-dump-ellipsization\" title=\"Symfony\\Component\\Mime\\Header\\Headers
+\"><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">Symfony\\Component\\Mime\\Header</span><span class=\"sf-dump-ellipsis sf-dump-ellipsis-note\">\\</span><span class=\"sf-dump-ellipsis-tail\">Headers</span></span> {<a class=sf-dump-ref>#1395</a><samp data-depth=3 class=sf-dump-compact>
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Header\\Headers`\">headers</span>: <span class=sf-dump-note>array:3</span> [ &#8230;3]
+      -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Header\\Headers`\">lineLength</span>: <span class=sf-dump-num>76</span>
+    </samp>}
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Message`\">body</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Email`\">text</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Email`\">textCharset</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Email`\">html</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Email`\">htmlCharset</span>: <span class=sf-dump-const>null</span>
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Email`\">attachments</span>: []
+    -<span class=sf-dump-private title=\"Private property defined in class:&#10;`Symfony\\Component\\Mime\\Email`\">cachedBody</span>: <span class=sf-dump-const>null</span>
+  </samp>}
+  #<span class=sf-dump-protected title=\"Protected property\">embeddedFiles</span>: []
+</samp>}
+</pre><script>Sfdump(\"sf-dump-1527393445\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
+"}},"userId":3,"exception":"[object] (Spatie\\LaravelIgnition\\Exceptions\\ViewException(code: 0): Undefined constant \"name\" at C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\resources\\views\\emails\\money_received.blade.php:13)
+[stacktrace]
+#0 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require()
+#1 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\Arcell...', Array)
+#3 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\Arcell...', Array)
+#4 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\Arcell...', Array)
+#5 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#6 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#7 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(433): Illuminate\\View\\View->render()
+#8 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(408): Illuminate\\Mail\\Mailer->renderView('emails.money_re...', Array)
+#9 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(320): Illuminate\\Mail\\Mailer->addContent(Object(Illuminate\\Mail\\Message), 'emails.money_re...', NULL, NULL, Array)
+#10 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(213): Illuminate\\Mail\\Mailer->send('emails.money_re...', Array, Object(Closure))
+#11 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#12 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(214): Illuminate\\Mail\\Mailable->withLocale(NULL, Object(Closure))
+#13 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(357): Illuminate\\Mail\\Mailable->send(Object(Illuminate\\Mail\\Mailer))
+#14 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(301): Illuminate\\Mail\\Mailer->sendMailable(Object(App\\Mail\\MoneyReceivedMail))
+#15 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\PendingMail.php(124): Illuminate\\Mail\\Mailer->send(Object(App\\Mail\\MoneyReceivedMail))
+#16 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Events\\MoneySent.php(40): Illuminate\\Mail\\PendingMail->send(Object(App\\Mail\\MoneyReceivedMail))
+#17 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController.php(56): App\\Events\\MoneySent->__construct(Object(App\\Models\\Transaction))
+#18 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\ManagesTransactions.php(30): App\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController->App\\Http\\Controllers\\Mobile\\API\\V1\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#19 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(509): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#20 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#21 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController.php(57): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#22 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController->sendMoney(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendMoney', Array)
+#24 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController), 'sendMoney')
+#25 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#26 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#27 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Middleware\\RateLimitMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\RateLimitMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'send_money_', '5', '60')
+#30 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Middleware\\UserAuth.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\UserAuth->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Middleware\\AuthenticateJWT.php(65): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AuthenticateJWT->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#38 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#39 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#40 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#42 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#44 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#63 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#64 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#65 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Arcell...')
+#66 {main}
+
+[previous exception] [object] (Error(code: 0): Undefined constant \"name\" at C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\storage\\framework\\views\\d40538c65b7637ca14f32670f8e0e63c.php:13)
+[stacktrace]
+#0 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(123): require()
+#1 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(124): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
+#2 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\Users\\\\Arcell...', Array)
+#3 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(72): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\Users\\\\Arcell...', Array)
+#4 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(207): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\Users\\\\Arcell...', Array)
+#5 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(190): Illuminate\\View\\View->getContents()
+#6 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(159): Illuminate\\View\\View->renderContents()
+#7 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(433): Illuminate\\View\\View->render()
+#8 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(408): Illuminate\\Mail\\Mailer->renderView('emails.money_re...', Array)
+#9 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(320): Illuminate\\Mail\\Mailer->addContent(Object(Illuminate\\Mail\\Message), 'emails.money_re...', NULL, NULL, Array)
+#10 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(213): Illuminate\\Mail\\Mailer->send('emails.money_re...', Array, Object(Closure))
+#11 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Localizable.php(19): Illuminate\\Mail\\Mailable->Illuminate\\Mail\\{closure}()
+#12 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailable.php(214): Illuminate\\Mail\\Mailable->withLocale(NULL, Object(Closure))
+#13 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(357): Illuminate\\Mail\\Mailable->send(Object(Illuminate\\Mail\\Mailer))
+#14 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(301): Illuminate\\Mail\\Mailer->sendMailable(Object(App\\Mail\\MoneyReceivedMail))
+#15 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\PendingMail.php(124): Illuminate\\Mail\\Mailer->send(Object(App\\Mail\\MoneyReceivedMail))
+#16 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Events\\MoneySent.php(40): Illuminate\\Mail\\PendingMail->send(Object(App\\Mail\\MoneyReceivedMail))
+#17 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController.php(56): App\\Events\\MoneySent->__construct(Object(App\\Models\\Transaction))
+#18 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\ManagesTransactions.php(30): App\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController->App\\Http\\Controllers\\Mobile\\API\\V1\\{closure}(Object(Illuminate\\Database\\MySqlConnection))
+#19 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(509): Illuminate\\Database\\Connection->transaction(Object(Closure))
+#20 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(355): Illuminate\\Database\\DatabaseManager->__call('transaction', Array)
+#21 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController.php(57): Illuminate\\Support\\Facades\\Facade::__callStatic('transaction', Array)
+#22 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController->sendMoney(Object(Illuminate\\Http\\Request))
+#23 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(43): Illuminate\\Routing\\Controller->callAction('sendMoney', Array)
+#24 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(260): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Mobile\\API\\V1\\TransactionController), 'sendMoney')
+#25 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#26 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(806): Illuminate\\Routing\\Route->run()
+#27 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Middleware\\RateLimitMiddleware.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\RateLimitMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'send_money_', '5', '60')
+#30 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Middleware\\UserAuth.php(59): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\UserAuth->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\app\\Http\\Middleware\\AuthenticateJWT.php(65): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): App\\Http\\Middleware\\AuthenticateJWT->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(159): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(135): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#38 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(87): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#39 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#40 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#42 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(784): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#43 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#44 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(737): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#45 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(200): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(144): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(99): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(39): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(183): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#61 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(119): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#62 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(175): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#63 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#64 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#65 C:\\Users\\Arcella\\OneDrive\\Desktop\\Send-Money-API\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\Arcell...')
+#66 {main}
+"} 
