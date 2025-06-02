@@ -12,6 +12,15 @@ use Illuminate\Support\Facades\DB;
 class TransactionController extends Controller
 {
     /**
+     * Get Wallet Balance
+     *
+     * @return void
+     */
+    public function getWalletBalance(){
+        return Auth::user()->wallet_balance;
+    }
+    
+    /**
      * Send Money To Another User
      *
      * @param \Illuminate\Http\Request $request

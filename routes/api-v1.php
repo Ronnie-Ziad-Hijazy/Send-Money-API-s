@@ -26,5 +26,6 @@ Route::middleware(['auth' , 'user'])->group(function () {
     Route::post('/is-valid' , [AuthUserController::class, 'isValid']);
 
     // RateLimit 5 requests per minute
+    Route::get('/get-balance' , [TransactionController::class, 'getWalletBalance']);
     Route::post('/send-money' , [TransactionController::class, 'sendMoney'])->middleware(['ratelimit:send_money_,5,60']);
 });
