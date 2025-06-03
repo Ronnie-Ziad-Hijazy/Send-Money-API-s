@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Auth;
 
 class Transaction extends Model
 {
@@ -39,6 +40,23 @@ class Transaction extends Model
         'recipient_id' => 'int',
         'amount' => 'decimal:2',
     ];
+
+    protected $appends = ['transaction_type'];
+
+    /**
+     * Append Transaction Type For History
+     *
+     * @return void
+     */
+    public function getTransactionTypeAttribute(){
+        $userAuthID = Auth::user();
+        if($this->sender_id == $userAuthID){
+            return "send";
+        }else if($this->recipient_id == $userAuthID){
+            return "receive";
+        }
+        return "Unknown";
+    }
 
     /**
      * Get the sender that owns the Transaction

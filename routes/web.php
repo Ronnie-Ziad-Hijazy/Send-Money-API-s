@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\MailController;
-use App\Mail\MoneySentMail;
 use Illuminate\Support\Facades\Route;
 
 /*

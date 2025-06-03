@@ -18,6 +18,7 @@ class TransactionController extends Controller
      */
     public function getWalletBalance(){
         return response()->json([
+            'user_name' => Auth::user()->name,
             'balance' => Auth::user()->wallet_balance
         ]);
     }
@@ -72,5 +73,14 @@ class TransactionController extends Controller
             'sender_balance' => $sender->fresh()->wallet_balance,
             'recipient_balance' => $recipient->fresh()->wallet_balance,
         ]);
+    }
+
+    /**
+     * Get
+     *
+     * @return void
+     */
+    public function getWalletHistories(){
+        return response()->json(Transaction::where('sender_id' , Auth::id())->orWhere('recipient_id' , Auth::id())->orderBy('created_at' , 'desc')->paginate(10));
     }
 }
