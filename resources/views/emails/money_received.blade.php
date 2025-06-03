@@ -12,9 +12,9 @@
 
     <p>Hi {{ $transaction->recipient->name }},</p>
 
-    <p>You have successfully Received ${{ $transaction->amount }} from {{ $transaction->sender->email }}.</p>
+    <p>You have successfully Received {{ $transaction->amount }}IQD from {{ $transaction->sender->email }}.</p>
 
-    <p>Transaction ID: {{ $transaction->id }}</p>
+    <p>Transaction ID: #{{ $transaction->id }}</p>
     
     
 </body>
