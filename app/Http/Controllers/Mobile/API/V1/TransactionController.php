@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Mobile\API\V1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\TransactionResources;
 use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -81,6 +82,6 @@ class TransactionController extends Controller
      * @return void
      */
     public function getWalletHistories(){
-        return response()->json(Transaction::where('sender_id' , Auth::id())->orWhere('recipient_id' , Auth::id())->orderBy('created_at' , 'desc')->paginate(10));
+        return response()->json(TransactionResources::collection(Transaction::where('sender_id' , Auth::id())->orWhere('recipient_id' , Auth::id())->orderBy('created_at' , 'desc')->paginate(10)));
     }
 }
