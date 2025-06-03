@@ -22,6 +22,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'wallet_balance'
     ];
 
     /**
@@ -41,6 +42,7 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+        'wallet_balance' => 'decimal:2'
     ];
 
         /**
@@ -91,9 +93,9 @@ class User extends Authenticatable
      */
     protected static function booted()
     {
-        // This will add 50,000 to balance_wallet for every new user created
+        // This will add 50,000 to wallet_balance for every new user created
         User::created(function ($user) {
-            $user->balance_wallet = 50000;
+            $user->wallet_balance = 50000;
             $user->save();
         });
     }
