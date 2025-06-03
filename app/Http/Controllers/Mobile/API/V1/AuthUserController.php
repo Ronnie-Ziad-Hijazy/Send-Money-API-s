@@ -81,10 +81,12 @@ class AuthUserController extends Controller
      */
     public function register(Request $request)
     {
-        $validated = $this->validate($request, [
+        $validated = $this->validateMobile($request, [
             'name' => 'required|string|max:60',
             'email' => 'required|email|unique:users,email|max:45',
             'password' => 'required|string|min:6',
+        ],[
+            'email.unique' => 'The email does not match any existing user',
         ]);
         // Save user
         $user = new User($validated);
