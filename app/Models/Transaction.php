@@ -49,7 +49,7 @@ class Transaction extends Model
      * @return void
      */
     public function getTransactionTypeAttribute(){
-        $userAuthID = Auth::user();
+        $userAuthID = Auth::id();
         if($this->sender_id == $userAuthID){
             return "send";
         }else if($this->recipient_id == $userAuthID){
