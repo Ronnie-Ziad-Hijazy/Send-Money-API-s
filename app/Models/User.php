@@ -83,4 +83,18 @@ class User extends Authenticatable
         $customerToken->save();
         return JWT::encode($payload, base64_decode(strtr(env('JWT_SECRET'), '-_', '+/')), "HS256");
     }
+
+    /**
+     * Booted Function
+     *
+     * @return void
+     */
+    protected static function booted()
+    {
+        // This will add 50,000 to balance_wallet for every new user created
+        User::created(function ($user) {
+            $user->balance_wallet = 50000;
+            $user->save();
+        });
+    }
 }
