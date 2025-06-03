@@ -27,9 +27,11 @@ class AuthUserController extends Controller
      */
     public function login(Request $request)
     {
-        $validated = $this->validate($request, [
+        $validated = $this->validateMobile($request, [
             'email' => 'required|string|email|exists:users,email',
             'password' => 'required|string|max:100',
+        ],[
+            'email.exists' => 'The email does not match any existing user',
         ]);
 
         $user = User::whereRaw('LOWER(email) = ?', [$validated['email']])->first();
