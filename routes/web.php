@@ -18,11 +18,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-
-// Route::get('/preview-email', function () {
-//     $transaction = \App\Models\Transaction::latest()->with(['sender', 'recipient'])->first();
-
-//     return new MoneySentMail($transaction);
-// });
-Route::post('/test-notify', [MailController::class, 'contactUs']);
