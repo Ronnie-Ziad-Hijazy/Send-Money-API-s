@@ -17,8 +17,10 @@ class TransactionResources extends JsonResource
         return [
             'transaction_type' => $this->transaction_type,
             'created_at' => $this->created_at,
-            'sender' => $this->transaction_type == "send" ? $this->sender->name : "",
-            'receiver' => $this->transaction_type == "receive" ? $this->recipient->name : "",
+            'amount' => $this->amount,
+            'status' => $this->status,
+            'from' => $this->sender->email,
+            'to' => $this->recipient->email,
         ];
     }
 }

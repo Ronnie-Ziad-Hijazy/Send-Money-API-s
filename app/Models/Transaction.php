@@ -53,7 +53,7 @@ class Transaction extends Model
         if($this->sender_id == $userAuthID){
             return "send";
         }else if($this->recipient_id == $userAuthID){
-            return "receive";
+            return "received";
         }
         return "Unknown";
     }
