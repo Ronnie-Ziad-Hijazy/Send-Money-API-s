@@ -50,7 +50,7 @@ class AuthUserController extends Controller
                 ]);
             }
         }
-        return $this->fireErrorMobile(trans('messages.password_incorrect'));
+        return $this->fireErrorMobile("Incorrect E-mail Or Password");
     }
 
     /**

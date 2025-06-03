@@ -24,6 +24,7 @@ Route::post('/register' , [AuthUserController::class, 'register']);
 Route::middleware(['auth' , 'user'])->group(function () {
     // Is Logged In
     Route::post('/is-valid' , [AuthUserController::class, 'isValid']);
+    Route::post('/logout' , [AuthUserController::class, 'logout']);
 
     // RateLimit 5 requests per minute
     Route::get('/get-balance' , [TransactionController::class, 'getWalletBalance']);
