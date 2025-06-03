@@ -86,7 +86,7 @@ class AuthUserController extends Controller
             'email' => 'required|email|unique:users,email|max:45',
             'password' => 'required|string|min:6',
         ],[
-            'email.unique' => 'The email does not match any existing user',
+            'email.unique' => 'This Email is Registered Before',
         ]);
         // Save user
         $user = new User($validated);
