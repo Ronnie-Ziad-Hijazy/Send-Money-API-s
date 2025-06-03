@@ -17,7 +17,9 @@ class TransactionController extends Controller
      * @return void
      */
     public function getWalletBalance(){
-        return Auth::user()->wallet_balance;
+        return response()->json([
+            'balance' => Auth::user()->wallet_balance
+        ]);
     }
     
     /**
