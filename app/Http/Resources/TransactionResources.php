@@ -15,10 +15,10 @@ class TransactionResources extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'transaction_type' => $request->transaction_type,
-            'created_at' => $request->created_at,
-            'sender' => $this->sender(),
-            'receiver' => $this->sender(),
+            'transaction_type' => $this->transaction_type,
+            'created_at' => $this->created_at,
+            'sender' => $this->sender->name,
+            'receiver' => $this->recipient->name,
         ];
     }
 }
